@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Fitzroy Catholic Bookshop</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel = "stylesheet" type = "text/css"   href = "search.css" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+   <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <img src="img/fitzroy.png" alt="Fitzroy Catholic Bookshop" width="8%" class="w3-left"/>
+	<ul class="breadcrumb">
+	<li> <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a></li>
+    <li> <a href="site_map.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SITE MAP</a></li>
+     <li class="c"> <a href="search.html" class="w3-bar-item w3-button w3-padding-large">SEARCH</a></li>
+    <li> <a href="maintenance.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MAINTENANCE</a></li>
+	<li> <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a></li>
+	</ul>
+  </div>
+</div>
+
+<!-- Content -->
+	  <div class="w3-container w3-content w3-padding-64" style="max-width:100%; overflow:hidden" id="catMain">
+  <br/> <br/>
+    <div style="height:100%;width:30%"><br/></div>
+  <h2 class="w3-wide w3-center">CATALOGUE SEARCH</h2>
+  	<div style="width:30%;margin: left;float: left">
+  		<p id="error_alert" style="color:red"></p>
+		<h3>Search Criteria</h3>
+		<div id="cri_sch">
+		<p style="display: inline-block"><select name="option1" id="option1" style="float: center;width: 10em;" onchange="optionchange(1)">
+		<option> -- Criteria -- </option>
+		<option value="title">Title</option>
+		<option value="isbn">ISBN</option>
+		<option value="cat">Category</option>
+		<option value="pub">Publisher</option>
+		<option value="auth">Author</option>
+		<option value="price">Price</option>
+		</select>&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input id="c1" style="float: right;width: 15em;" type="text" name="noname"/>
+		</p>
+		</div>
+		<input id="criteria" class="add-button" value="More Criteria" type="button" style="margin:left;width: 10em;" onclick="addCri()"/>
+		<input id="submit" class="add-button" value="Submit" type="button" style="margin:right;width: 10em;" onclick="submit()"/>
+	</div>
+		<div style="width:70%;margin: right;float:right">
+		<div id="ifrm">
+		<h2>Search result will appear here</h2>
+		</div>
+		</div>
+	</div>
+<!-- End of content -->
+
+<!-- Footer -->	
+	<div class="footerb w3-container w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="fa fa-copyright">2020 Fitzroy Catholic Bookshop</p>
+</div>
+
+<!-- Utilize Javascript to do the client-side functions -->
+<script type="text/javascript" src="search.js"></script>
+</body>
+</html>

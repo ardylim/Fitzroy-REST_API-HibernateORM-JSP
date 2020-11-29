@@ -1,0 +1,39 @@
+body {font-family: "Lato", sans-serif; background-image: url("img//white.jpg"); background-repeat: no-repeat;background-size: cover;}
+.mySlides {display: none}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.a{
+	float: right;
+	width: 15em
+}
+.c{
+	background-color:silver
+}
+button{
+	width: 20em
+}
+.footerb{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
